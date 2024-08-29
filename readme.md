@@ -2,7 +2,6 @@
 
 [GET ITS PYPI HERE](https://pypi.org/project/flexible-requirements/0.1.0/)
 
-
 This tool generates a flexible `requirements.txt` file from an existing one, helping to resolve version conflicts and compatibility issues in Python projects. 
 
 ## Features
@@ -16,28 +15,29 @@ This tool generates a flexible `requirements.txt` file from an existing one, hel
 
 ## Installation
 
-1. Clone this repository:
+1. Install the package from PyPI:
    ```
-   git clone [https://github.com/yourusername/flexible-requirements-generator.git](https://github.com/benny-png/Flexible-Requirements-python-LIBRARY.git)
+   pip install flexible-requirements
+   ```
+2. Alternatively, you can clone this repository and install the dependencies manually:
+   ```
+   git clone https://github.com/benny-png/Flexible-Requirements-python-LIBRARY.git
    cd Flexible-Requirements-python-LIBRARY
-   pip install own_requirements.txt
-   ```
-2. Install the required dependencies:
-   ```
-   pip install requests packaging
+   pip install -r own_requirements.txt
    ```
 
 ## Usage
 
 Run the script from the command line:
-Default
+
+### Default Usage
 ```
-python main.py 
+flexible-requirements 
 ```
-or
-Modular
+
+### Modular Usage
 ```
-python main.py [input_file] [output_file] [--sequential] [--fast] [--log {DEBUG,INFO,WARNING,ERROR,CRITICAL}]
+flexible-requirements [input_file] [output_file] [--sequential] [--fast] [--log {DEBUG,INFO,WARNING,ERROR,CRITICAL}]
 ```
 
 - `input_file`: Path to the input requirements file (default: `requirements.txt`)
@@ -46,9 +46,9 @@ python main.py [input_file] [output_file] [--sequential] [--fast] [--log {DEBUG,
 - `--log`: Set the logging level (default: INFO)
 - `--fast`: Faster but not that accurate and not perfected yet/tested well
 
-Example:
+### Example
 ```
-python main.py my_requirements.txt my_flexible_requirements.txt --sequential --log --fast DEBUG
+flexible-requirements my_requirements.txt my_flexible_requirements.txt --sequential --log DEBUG --fast
 ```
 
 ## How it works
@@ -88,3 +88,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
