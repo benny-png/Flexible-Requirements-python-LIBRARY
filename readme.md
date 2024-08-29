@@ -1,6 +1,6 @@
 # Flexible Requirements Generator 
 
-[Flexible Requirements PYPI](https://pypi.org/project/flexible-requirements/0.1.0/)
+[GET ITS PYPI HERE](https://pypi.org/project/flexible-requirements/0.1.0/)
 
 
 This tool generates a flexible `requirements.txt` file from an existing one, helping to resolve version conflicts and compatibility issues in Python projects. 
