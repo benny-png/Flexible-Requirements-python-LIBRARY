@@ -4,6 +4,11 @@
 
 This tool generates a flexible `requirements.txt` file from an existing one, helping to resolve version conflicts and compatibility issues in Python projects. 
 
+## Real-Life Use Cases
+
+Perfect for teams where each member uses different Python versions, operating systems, or hardware, this tool ensures that the `requirements.txt` file remains flexible and compatible across all environments, resolving version conflicts and platform-specific issues.
+
+
 ## Features
 
 - Checks package compatibility with PyPI without installing packages
