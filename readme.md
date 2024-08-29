@@ -18,8 +18,9 @@ This tool generates a flexible `requirements.txt` file from an existing one, hel
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/flexible-requirements-generator.git
-   cd flexible-requirements-generator
+   git clone [https://github.com/yourusername/flexible-requirements-generator.git](https://github.com/benny-png/Flexible-Requirements-python-LIBRARY.git)
+   cd Flexible-Requirements-python-LIBRARY
+   pip install own_requirements.txt
    ```
 2. Install the required dependencies:
    ```
@@ -29,19 +30,25 @@ This tool generates a flexible `requirements.txt` file from an existing one, hel
 ## Usage
 
 Run the script from the command line:
-
+Default
 ```
-python flexible_requirements.py [input_file] [output_file] [--sequential] [--log {DEBUG,INFO,WARNING,ERROR,CRITICAL}]
+python main.py 
+```
+or
+Modular
+```
+python main.py [input_file] [output_file] [--sequential] [--fast] [--log {DEBUG,INFO,WARNING,ERROR,CRITICAL}]
 ```
 
 - `input_file`: Path to the input requirements file (default: `requirements.txt`)
 - `output_file`: Path to the output flexible requirements file (default: `flexible_requirements.txt`)
 - `--sequential`: Use sequential processing instead of concurrent (optional)
 - `--log`: Set the logging level (default: INFO)
+- `--fast`: Faster but not that accurate and not perfected yet/tested well
 
 Example:
 ```
-python flexible_requirements.py my_requirements.txt my_flexible_requirements.txt --sequential --log DEBUG
+python main.py my_requirements.txt my_flexible_requirements.txt --sequential --log --fast DEBUG
 ```
 
 ## How it works
