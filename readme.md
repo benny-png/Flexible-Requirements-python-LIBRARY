@@ -1,13 +1,13 @@
-# Flexible Requirements Generator 
 
-[GET ITS PYPI HERE](https://pypi.org/project/flexible-requirements)
+# Flexible Requirements Generator
 
-This tool generates a flexible `requirements.txt` file from an existing one, helping to resolve version conflicts and compatibility issues in Python projects. 
+This tool generates a flexible `requirements.txt` file from an existing one, helping to resolve version conflicts and compatibility issues in Python projects.
+
+[View on PyPI](https://pypi.org/project/flexible-requirements) (Note: PyPI version may have issues)
 
 ## Real-Life Use Cases
 
 Perfect for teams where each member uses different Python versions, operating systems, or hardware, this tool ensures that the `requirements.txt` file remains flexible and compatible across all environments, resolving version conflicts and platform-specific issues.
-
 
 ## Features
 
@@ -20,15 +20,16 @@ Perfect for teams where each member uses different Python versions, operating sy
 
 ## Installation
 
-1. Install the package from PyPI:
-   ```
-   pip install flexible-requirements
-   ```
-2. Alternatively, you can clone this repository and install the dependencies manually:
+1. Clone this repository and install the dependencies manually:
    ```
    git clone https://github.com/benny-png/Flexible-Requirements-python-LIBRARY.git
    cd Flexible-Requirements-python-LIBRARY
    pip install -r own_requirements.txt
+   ```
+
+2. Alternatively, you can install the package from PyPI (note: this method may have issues):
+   ```
+   pip install flexible-requirements
    ```
 
 ## Usage
@@ -37,14 +38,13 @@ Run the script from the command line:
 
 ### Default Usage
 ```
-flexible-requirements 
+python main.py
 ```
 
 ### Modular Usage
 ```
-flexible-requirements [input_file] [output_file] [--sequential] [--fast] [--log {DEBUG,INFO,WARNING,ERROR,CRITICAL}]
+python main.py [input_file] [output_file] [--sequential] [--fast] [--log {DEBUG,INFO,WARNING,ERROR,CRITICAL}]
 ```
-
 - `input_file`: Path to the input requirements file (default: `requirements.txt`)
 - `output_file`: Path to the output flexible requirements file (default: `flexible_requirements.txt`)
 - `--sequential`: Use sequential processing instead of concurrent (optional)
@@ -53,7 +53,7 @@ flexible-requirements [input_file] [output_file] [--sequential] [--fast] [--log 
 
 ### Example
 ```
-flexible-requirements my_requirements.txt my_flexible_requirements.txt --sequential --log DEBUG --fast
+python main.py my_requirements.txt my_flexible_requirements.txt --sequential --log DEBUG --fast
 ```
 
 ## How it works
@@ -93,5 +93,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-
