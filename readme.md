@@ -31,18 +31,6 @@ Perfect for teams where each member uses different Python versions, operating sy
    ```
    pip install flexible-requirements
    ```
-   For the PYPI package use 
-
-   DEFAULT
-   ```
-   flexible-requirements 
-   ```
-   OR
-
-   MODULAR
-   ```
-   flexible-requirements [input_file] [output_file] [--sequential] [--fast] [--log {DEBUG,INFO,WARNING,ERROR,CRITICAL}]
-   ``` 
 
 
 ## Usage
@@ -68,6 +56,20 @@ python main.py [input_file] [output_file] [--sequential] [--fast] [--log {DEBUG,
 ```
 python main.py my_requirements.txt my_flexible_requirements.txt --sequential --log DEBUG --fast
 ```
+
+### For the PYPI package use commands
+
+   DEFAULT
+   ```
+   flexible-requirements 
+   ```
+   OR
+
+   MODULAR
+   ```
+   flexible-requirements [input_file] [output_file] [--sequential] [--fast] [--log {DEBUG,INFO,WARNING,ERROR,CRITICAL}]
+   ``` 
+
 
 ## How it works
 
