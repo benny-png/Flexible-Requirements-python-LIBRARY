@@ -10,7 +10,6 @@ This tool generates a flexible `requirements.txt` file from an existing one, hel
 [![Downloads](https://pepy.tech/badge/flexible-requirements/month)](https://pepy.tech/project/flexible-requirements)
 [![Downloads](https://pepy.tech/badge/flexible-requirements/week)](https://pepy.tech/project/flexible-requirements)
 
-![Total Visitors](https://visitor-badge.laobi.icu/badge?page_id=benny-png.Flexible-Requirements-python-LIBRARY)
 
 ## Real-Life Use Cases
 
