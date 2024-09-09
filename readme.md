@@ -3,6 +3,7 @@
 
 This tool generates a flexible `requirements.txt` file from an existing one, helping to resolve version conflicts and compatibility issues in Python projects.
 
+[View on GitHub](https://github.com/benny-png/Flexible-Requirements-python-LIBRARY)
 [View on PyPI](https://pypi.org/project/flexible-requirements) (Note: PyPI version may have issues, if so use source code by cloning )
 
 [![Downloads](https://pepy.tech/badge/flexible-requirements)](https://pepy.tech/project/flexible-requirements)
