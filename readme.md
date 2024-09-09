@@ -3,7 +3,12 @@
 
 This tool generates a flexible `requirements.txt` file from an existing one, helping to resolve version conflicts and compatibility issues in Python projects.
 
-[View on PyPI](https://pypi.org/project/flexible-requirements) (Note: PyPI version may have issues)
+[View on PyPI](https://pypi.org/project/flexible-requirements) (Note: PyPI version may have issues, if so use source code by cloning )
+
+[![Downloads](https://pepy.tech/badge/flexible-requirements)](https://pepy.tech/project/flexible-requirements)
+[![Downloads](https://pepy.tech/badge/flexible-requirements/month)](https://pepy.tech/project/flexible-requirements)
+[![Downloads](https://pepy.tech/badge/flexible-requirements/week)](https://pepy.tech/project/flexible-requirements)
+
 
 ## Real-Life Use Cases
 
@@ -35,6 +40,8 @@ Perfect for teams where each member uses different Python versions, operating sy
 
 ## Usage
 
+### 1. For the cloning approach use commands
+
 Run the script from the command line:
 
 ### Default Usage
@@ -57,7 +64,7 @@ python main.py [input_file] [output_file] [--sequential] [--fast] [--log {DEBUG,
 python main.py my_requirements.txt my_flexible_requirements.txt --sequential --log DEBUG --fast
 ```
 
-### For the PYPI package use commands
+### 2. For the PYPI package use commands
 
    DEFAULT
    ```
@@ -80,7 +87,7 @@ python main.py my_requirements.txt my_flexible_requirements.txt --sequential --l
    - Keeps the requirement as-is if it's compatible
    - Loosens the version constraint if no compatible version is found for the current platform
    - Comments out the requirement if the package is not available on PyPI or for the current platform
-5. The processed requirements are written to the output file with explanatory comments.
+5. The processed requirements are written to the output file with explanatory comments. Default is 'flexible_requirements.txt'
 6. Detailed logs are provided throughout the process for better visibility and debugging.
 
 ## Output
