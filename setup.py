@@ -5,7 +5,7 @@ with open("readme.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="flexible-requirements",
-    version="0.1.5",
+    version="0.1.6",
     author="benny-png",
     author_email="mazikuben2@gmail.com",
     description="A library for generating flexible Python requirements",
